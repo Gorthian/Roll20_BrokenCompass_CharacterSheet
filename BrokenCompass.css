@@ -13,5 +13,81 @@
 /*             GRUNDLAGEN                          */
 /***************************************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+.sheet-wrapper {
+	--sheet-bg			: #F5F5DC;
+	--sheet-text-color	: #000000;
+	--sheet-font-family	: "Ubuntu", sans-serif;
+}
+
+p .sheet-nowrap {
+	white-space			: nowrap;
+}
+
+div {
+	font-family			: var(--sheet-font-family);
+}
+
+/***************************************************/
+/*             GRIDS                               */
+/***************************************************/
+
+.sheet-BC {		
+	background-color		: var(--sheet-bg);
+	color					: var(--sheet-text-color);
+	display 				: grid;
+	grid-template-columns	: auto auto;
+	grid-template-areas		: 	"info			info		info"
+								"skills			luck		luck"
+								"skills			conditions	expertise"
+								"skills			items		items"
+								"experiences	pouches		bag"
+}
+
+div.sheet-info {
+	display					: grid;
+	grid-area				: info;
+}
+
+div.sheet-skills {
+	display					: grid;
+	grid-area				: skills;
+}
+
+div.sheet-luck {
+	display					: grid;
+	grid-area				: luck;
+}
+
+div.sheet-conditions {
+	display					: grid;
+	grid-area				: conditions;
+}
+
+div.sheet-expertise {
+	display					: grid;
+	grid-area				: expertise;
+}
+
+div.sheet-items {
+	display					: grid;
+	grid-area				: items;
+}
+
+div.sheet-experiences {
+	display					: grid;
+	grid-area				: experiences;
+}
+
+div.sheet-pouches {
+	display					: grid;
+	grid-area				: pouches;
+}
+
+div.sheet-bag {
+	display					: grid;
+	grid-area				: bag;
+}
 
 /*********************************/
