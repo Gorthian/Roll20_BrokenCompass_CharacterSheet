@@ -1,7 +1,7 @@
 <!--
 	EDITED by 			Gorthian
 	Version				0.1
-	Letzte Änderung		2022-01-25
+	Letzte Änderung		2022-01-30
 	
 	GitHub				https://github.com/Gorthian/Roll20_BrokenCompass_CharacterSheet
 	Wiki				https://github.com/Gorthian/Roll20_BrokenCompass_CharacterSheet/wiki
@@ -17,7 +17,50 @@
 		<p class="sheet-nowrap"><span data-i18n="slogan" /><input type="text" name="attr_slogan" placeholder="" /></p>
 	</div>
 	<div class="sheet-skills">
-		Fertigkeiten
+		<ul class="sheet-main-skills">
+			<li class="sheet-radio-set">
+				<span data-i18n="action" />
+				<input checked="checked" class="sheet-radiobox sheet-reset" type="radio" name="attr_action" value="0">
+				<input class="sheet-radiobox" type="radio" name="attr_action" value="1">
+				<input class="sheet-radiobox" type="radio" name="attr_action" value="2">
+				<input class="sheet-radiobox" type="radio" name="attr_action" value="3">
+			</li>
+			<li class="sheet-radio-set">
+				<span data-i18n="guts" />
+				<input checked="checked" class="sheet-radiobox sheet-reset" type="radio" name="attr_guts" value="0">
+				<input class="sheet-radiobox" type="radio" name="attr_guts" value="1">
+				<input class="sheet-radiobox" type="radio" name="attr_guts" value="2">
+				<input class="sheet-radiobox" type="radio" name="attr_guts" value="3">
+			</li>
+			<li class="sheet-radio-set">
+				<span data-i18n="knowledge" />
+				<input checked="checked" class="sheet-radiobox sheet-reset" type="radio" name="attr_knowledge" value="0">
+				<input class="sheet-radiobox" type="radio" name="attr_knowledge" value="1">
+				<input class="sheet-radiobox" type="radio" name="attr_knowledge" value="2">
+				<input class="sheet-radiobox" type="radio" name="attr_knowledge" value="3">
+			</li>
+			<li class="sheet-radio-set">
+				<span data-i18n="society" />
+				<input checked="checked" class="sheet-radiobox sheet-reset" type="radio" name="attr_society" value="0">
+				<input class="sheet-radiobox" type="radio" name="attr_society" value="1">
+				<input class="sheet-radiobox" type="radio" name="attr_society" value="2">
+				<input class="sheet-radiobox" type="radio" name="attr_society" value="3">
+			</li>
+			<li class="sheet-radio-set">
+				<span data-i18n="wilderness" />
+				<input checked="checked" class="sheet-radiobox sheet-reset" type="radio" name="attr_wilderness" value="0">
+				<input class="sheet-radiobox" type="radio" name="attr_wilderness" value="1">
+				<input class="sheet-radiobox" type="radio" name="attr_wilderness" value="2">
+				<input class="sheet-radiobox" type="radio" name="attr_wilderness" value="3">
+			</li>
+			<li class="sheet-radio-set">
+				<span data-i18n="crime" />
+				<input checked="checked" class="sheet-radiobox sheet-reset" type="radio" name="attr_crime" value="0">
+				<input class="sheet-radiobox" type="radio" name="attr_crime" value="1">
+				<input class="sheet-radiobox" type="radio" name="attr_crime" value="2">
+				<input class="sheet-radiobox" type="radio" name="attr_crime" value="3">
+			</li>			
+		</ul>
 	</div>
 	<div class="sheet-luck">
 		<span data-i18n="luck" />
