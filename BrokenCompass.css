@@ -26,7 +26,8 @@ p .sheet-nowrap {
 }
 
 div {
-	font-family			: var(--sheet-font-family);
+	border				: 1px solid black; /* DEBUG ONLY */
+	font-family			: var(--sheet-font-family);	
 }
 
 /***************************************************/
@@ -37,7 +38,7 @@ div {
 	background-color		: var(--sheet-bg);
 	color					: var(--sheet-text-color);
 	display 				: grid;
-	grid-template-columns	: auto auto;
+	grid-template-columns	: 40% 30% 30%;
 	grid-template-areas		: 	"info			info		info"
 								"skills			luck		luck"
 								"skills			conditions	expertise"
@@ -93,11 +94,16 @@ div.sheet-bag {
 /***************************************************/
 /*             INPUTS                              */
 /***************************************************/
+ul.sheet-main-skills {
+	border					: 1px solid red; /* DEBUG ONLY */
+	width					: 200px;
+}
 
 li.sheet-radio-set {
+	border					: 1px solid black; /* DEBUG ONLY */
 	display					: flex;
 	margin					: 2rem;
-	gap						: 10px;
+	gap						: 5px;
 }
 
 li.sheet-radio-set input.sheet-radiobox {
@@ -128,6 +134,13 @@ li.sheet-radio-set input.sheet-radiobox.sheet-reset {
 	background-color		: black;
 }
 
+ul.sheet-main-skills li {
+	font-weight				: bold;
+}
+
+ul.sheet-sub-skills li {
+	font-weight				: normal;
+}
 
 
 /*********************************/
