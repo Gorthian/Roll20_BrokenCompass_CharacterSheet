@@ -96,7 +96,7 @@ div.sheet-bag {
 div.sheet-tbl-row {
 	display					: flex;
 	width					: auto;
-	height					: 100%;
+	height					: fit-content;
 }
 
 div.sheet-tbl-col {
